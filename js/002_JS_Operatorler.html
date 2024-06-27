@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatörler</title>
+</head>
+<body>
+    <script>
+        // = atama operatörü
+        let s1 = 5;
+        let s2 = 544;
+        // + - % / *
+        let toplam = s1 + s2;
+        let Bolum = s1 / s2;
+        let carpim = s1 * s2;
+        let fark = s1 - s2;
+        let mod = s1 % s2;
+        // +=, -=, /=, *=, %=
+        // ==, >, <, >=, <=, !
+        // == ile === arasında ne fark var?
+        let vize = prompt('vize notunu gir....: ');
+        let final = prompt('final notunu gir....: ');
+        let ort =  (parseInt(vize) + parseInt(final)) / 2;
+        let sonuc = ort >= 50 ? 'Geçtiniz' : 'Başka sefere';
+        alert(sonuc);
+        
+    </script>
+</body>
+</html>

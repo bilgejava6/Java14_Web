@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 5px;
+            padding: 3px 13px;
+        }
+        #root{
+            width: 90%;
+            height: 50vh;
+            border: 1px solid green ;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="ekle('TEXT')">input text ekle</button>
+        <button onclick="ekle('IMG')">image ekle</button>
+        <button onclick="ekle('BUTTON')">buton ekle</button>
+    </div>
+    <div id="root">
+      
+    </div>
+
+    <script>
+        function ekle(elementType){
+            let myElement;
+            switch(elementType){
+                case 'TEXT':
+                    myElement = document.createElement("input");
+                    myElement.setAttribute('type','password');
+                    myElement.setAttribute('placeholder','Şifre gir');
+                    myElement.setAttribute('style','width:90%;padding:10px;color:red');
+                     break;
+                case 'IMG': 
+                    myElement = document.createElement("img");
+                    myElement.setAttribute('src','https://picsum.photos/100/100');
+                     break;
+                case 'BUTTON': 
+                    myElement = document.createElement("button");
+                     break;
+                default:
+                    alert('Geçersiz Seçim');
+                    break;
+            }
+            const root = document.getElementById('root');
+            root.appendChild(myElement);
+        }
+    </script>
+</body>
+</html>

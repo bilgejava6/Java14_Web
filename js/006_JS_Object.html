@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arac = {
+            id: 1,
+            ad: 'Mercedes',
+            model: 'Axxx333',
+            fiyat: 10000000
+        };
+        console.log(arac);
+        console.log('Araç adı...: ', arac.ad);
+        let musteriler = [
+            {
+                id: 1,
+                ad: 'Deniz',
+                adres: 'Ankara',
+                telefon: '0 555 544 3334',
+                adresdetay: {
+                    il: 'Ankara',
+                    ilce: 'merkez'
+                }
+            },
+            {
+                id: 2,
+                ad: 'Bahar',
+                adres: 'Bursa'
+            }
+        ];
+        console.log('1. müşterinin ili...: ', musteriler[0].adresdetay.il);
+        console.log('2. müşterinin telefon...: ', musteriler[1].telefon);
+        console.log('2. müşterinin ili...: ', musteriler[1].adresdetay?.il);
+        
+        /**
+         * bir keyword var ve içinde değer yok ise null döner
+         * bir keyword yok ve okumayaçalılırsanız undefined alırsınız.
+         * 
+         */ 
+    </script>
+</body>
+</html>

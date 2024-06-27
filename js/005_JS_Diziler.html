@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const marka = ['BMW','Audi','Mercedes','Vw','Volvo'];
+        console.log(marka);
+        let sonuc = marka.push('Serçe');// sona ekleme yapar
+        console.log('sonuç push....: ', sonuc);
+        console.log(marka);
+        sonuc = marka.shift(); // baştan eleman siler. silinen elemanı döner
+        console.log('sonuç shift....: ', sonuc);
+        console.log(marka);
+        sonuc = marka.unshift('Mercedes');// başa ekleme yapar
+        console.log('sonuç unshift....: ', sonuc);
+        console.log(marka);
+        sonuc = marka.pop();// sondan değer siler. silinen elemanı döner.
+        console.log('sonuç pop....: ', sonuc);
+        console.log(marka);
+        marka.sort();// a..z ye sıralama yapar.
+        console.log(marka);
+        marka.reverse();// diziyi derse çevirir.
+        console.log(marka);
+        sonuc = marka.indexOf('Audi');// verilen eleman ın index değerini döner
+        console.log('sonuc...: ', sonuc);
+        sonuc = marka[2]; // index i verilen elemanı döner
+        console.log('sonuc...: ', sonuc);
+        const set1 = ['BMW','Audi','Mercedes','Vw','Volvo'];
+        const set2 = ['BMW','Audi','Mercedes','Vw','Volvo'];
+        console.log(set1);
+        set1.splice(1,3);
+        console.log('splice(1,3)',set1);
+        set2.splice(2,3);
+        console.log('splice(2,3)',set2);
+
+        console.log(marka);
+        let filterMarka = marka.filter(m=> m.includes('i'));
+        console.log('i harfi içerenler...: ',filterMarka);
+        console.log('****** forEach ********');
+        marka.forEach(m=>{
+            console.log('değer...: ', m)
+        });
+        /***
+         * DİKKAT!!!!!!!
+         * forEach void olarak çalışır
+         * map ilgili listeyi döner.
+         * 
+         */ 
+        console.log('****** map **********');
+        let yeniListe = marka.map(m=>{
+            console.log('değer...: ', m)
+            if(!m.includes('i'))
+               return m+' bunu ekledik.';
+        });
+        console.log(yeniListe);
+        
+    </script>
+</body>
+</html>

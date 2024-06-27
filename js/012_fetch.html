@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .row{
+            display: flex;
+            flex:12;
+            flex-direction: row;
+            flex-wrap:wrap;
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2px;
+        }
+        .col-1{flex: 1;}.col-2{flex: 2;}.col-3{flex: 3;}.col-4{flex: 4;}.col-6{flex: 6;}.col-8{flex: 8;}.col-10{flex: 10;}
+
+        img{
+            margin: 5px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .border{
+            border: 1px dotted chocolate;
+            border-radius: 10px;
+        }
+
+        label{
+            width: 90%;
+            padding: 4px;
+            border: 1px solid rgb(211, 210, 210);
+            margin-bottom: 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="cardList">
+            
+        </div>
+    </div>
+    <script>
+        const cardList = document.getElementById('cardList');
+        cardList.innerHTML = '';
+        fetch('https://randomuser.me/api/?results=50')
+        .then(data=> data.json())
+        .then(data=>{
+            data.results.forEach(element => {
+                cardList.innerHTML += `
+                <div class="col col-2 border">
+                    <img id="img1" src="${element.picture.large}" alt="">
+                    <label id="ad1">${element.name.first +' '+element.name.last}</label>
+                    <label id="adres1">${element.location.city}</label>
+                    <label id="tel1">${element.phone}</label>
+                </div>
+                `;
+            });
+        })
+    </script>
+</body>
+</html>

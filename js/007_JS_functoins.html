@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="tanim('selam ilk meajım')">:Mesaj yayınla</button>
+    <script>
+        function topla(s1,s2){
+            let sonuc = s1+s2;
+            return sonuc;
+        }
+        let toplam = topla(5,8);
+        console.log(toplam);
+
+        const islem = function bolum(s1,s2){
+            return s1/s2;
+        };
+        const tanim = (mesaj)=>{
+            alert('mesaj ver....: '+mesaj );
+        };
+        console.log('100 ün 5 e bölümü', islem(100,5));
+    </script>
+</body>
+</html>

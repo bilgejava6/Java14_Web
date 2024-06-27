@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="ad">Adınızı Giriniz</label>
+        <input type="text" name="ad" id="ad">
+    </div>
+    <div>
+        <button type="submit" onclick="onayla()">Onayla</button>
+    </div>
+    <script>
+        /****
+         *  if(condition)
+         *  if()..else
+         *  if()..else if()...else if()....else
+         * 
+         *  switch(value){
+         *   case A  .... break;
+         *   case B  .... break;
+         *   default ;
+         * }
+         */
+        function onayla(){
+              const ad = document.getElementById('ad').value;  
+              if(ad.length <=3 || ad.length >32)
+                alert('Lütfen adınızı 3-32 karkter arasında olacak şekilde girinmiz');
+        }
+    </script>
+</body>
+</html>
