@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Kullanımı</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid blue;
+            height: 450px;
+        }
+        .item{
+            border: 1px solid red;
+            height: 100px;
+            margin-bottom: 5px;
+            order: 3;
+            flex: 1;
+        }
+        .item6{
+            order: -1;
+        }
+        .item4{
+            order: -8;
+        }
+        .item2{
+            order: 0;
+            flex: 3;
+        }
+        .item1{
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"><label>Item-1</label></div>
+        <div class="item item2"><label>Item-2</label></div>
+        <div class="item item3"><label>Item-3</label></div>
+        <div class="item item4"><label>Item-4</label></div>
+        <div class="item item5"><label>Item-5</label></div>
+        <div class="item item6"><label>Item-6</label></div>
+    </div>
+</body>
+</html>

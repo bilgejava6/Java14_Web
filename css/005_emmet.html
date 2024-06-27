@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        > bu işaret alt kırılımları child node eklemek için kullanılır.
+        + bu işaret aynı düzeyde ayni hizada olan bileşenleri eklemek için kul.
+        * bu işaret bir bileşendan kaç adet eklemek istenildiğini belirtir.
+        ^ bu işaret bulunduğun düzeyden bir üst satıra çık demektir.
+        () bu işaret bir alanı ayırmak için kullanılır ve bu alanın çoğal
+        .  bu işaret ilgili bileşene class eklemek için kullanılır.
+        # bu işaret iligli bileşene id eklemek için kullanılır.
+        tılmasını kolaylaştırır.
+        örn: table>thead>tr>th*5^^tbody>tr>td*5
+        - table.table-soft>thead>tr>th*5^^tbody>(tr>td*5)*2
+        - table.table-soft>thead>tr>th{item$}*5^^tbody>(tr>td*5)*3
+    -->
+    <table class="table-soft">
+        <thead>
+            <tr>
+                <th>item1</th>
+                <th>item2</th>
+                <th>item3</th>
+                <th>item4</th>
+                <th>item5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

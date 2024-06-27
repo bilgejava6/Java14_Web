@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /***
+            margin - bir bileşenin dış çeperlerinin
+            diğer bileşenlere olan uzaklığını temsil eder. 
+            margin-[left, right, top, bottom]
+            padding - bir bileşenin kendi iç bileşenlerine
+            olan uzaklığını belirler. iç bişelene verilen 
+            uzaklık değeri ilgili bileşenin hacmini arttırır.
+            padding-[left, right, top, bottom]
+        */
+        .box{
+            border: 1px solid red;
+            width: 400px;
+            height: 400px;
+            overflow:hidden;
+            margin-left: 50px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        .dv1{
+            border: 1px solid green;
+            margin-bottom: 5px;
+            width: 100px;
+            display: inline-block;
+        }
+        .dv2{
+            margin-bottom: 10px;
+        }
+        .form-input{
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dv2">
+        <input class="form-input" type="text">
+    </div>
+    <div class="dv1">
+        <label >Ali</label>
+    </div>
+    <div class="dv1">
+        <label >Deniz</label>
+    </div>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias explicabo dolor voluptatem distinctio, ut molestiae magnam in illo. Harum vero sunt corrupti esse numquam nisi repellat laboriosam odit magni quae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur odio voluptatibus aliquam nostrum? Unde, nesciunt? Accusamus illo ex rerum sint illum voluptatum enim tenetur soluta nemo. Quibusdam, esse autem.
+        Recusandae, amet nostrum! Provident commodi neque, minus molestias illum ipsam dolor distinctio eos itaque inventore nesciunt exercitationem? Aliquam doloribus sed, dolor excepturi rem, incidunt, et ad maxime quia natus eaque?
+        Harum laudantium ab adipisci, aliquam quia mollitia, nam dolorem fugit blanditiis suscipit quae laborum eligendi pariatur illo officia rem voluptatibus hic dicta a minus? Itaque necessitatibus odio eum. Rerum, iusto.
+        Tenetur minus optio exercitationem officiis officia reiciendis? Voluptatibus dolor animi sit deserunt quaerat maxime placeat corrupti? Debitis ab at asperiores incidunt porro quod velit, a eos sit optio aspernatur atque!
+        Tempore a dignissimos eos, magnam dicta quas eum, nisi modi, sed perspiciatis ea culpa? Adipisci pariatur aliquid, iste, perspiciatis explicabo officiis deleniti dignissimos odio dicta unde porro ut necessitatibus nam.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita culpa magni explicabo harum asperiores esse consequuntur, itaque enim illum, porro, eos quasi animi qui totam minima! Ab vero aliquam delectus!
+        </p>
+    </div>
+    <div>
+        <button>Bunu Tıklamalısın </button>
+    </div>
+</body>
+</html>

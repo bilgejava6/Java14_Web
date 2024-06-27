@@ -1,0 +1,35 @@
+p{
+    border: 1px solid cyan;
+}
+
+/**
+class için .(nokta) CLASS_NAME
+*/
+.ana-baslik{
+    border: 2px solid red;
+    color: green;
+}
+
+#altbaslik{
+    border: 1px solid blue;
+    background-color: chocolate;
+}
+
+.diger-konular{
+    border: 1px solid purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.manset{
+    color: rgb(138, 5, 5);
+}
+.alt-basliklar{
+    color: cornflowerblue;
+}
+
+.baslik-font-1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.baslik-font-2{
+    font-family:Arial, Helvetica, sans-serif
+}

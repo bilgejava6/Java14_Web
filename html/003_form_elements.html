@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+        input{
+            display: inline-block;
+            width: 300px;
+        }
+        img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>form bileşenleri</h1>
+    </div>
+    <div id="body">
+        <!--
+            inline - block element
+        -->
+        <div>
+            <label for="ad">Adınızı giriniz</label>
+            <input type="text" name="ad" id="ad">
+        </div>
+        <div>
+            <label for="soyad">Soyadınızı giriniz</label>
+            <input type="text" name="soyad" id="soyad">
+        </div>
+        <div>
+           <label for="adres">Adresiniz</label>
+            <input type="text" name="adres" id="adres"> 
+        </div>
+        <div>
+            <label for="email">E-Posta</label>
+            <input type="email" name="email" id="email"> 
+        </div>
+       <div>
+            <label>İlgi alanları</label><br>
+            <input type="checkbox"><label>Yüzme</label><br>
+            <input type="checkbox"><label>Yürüyüş</label><br>
+            <input type="checkbox"><label>Sinema</label>
+        </div>
+        <div>
+            <label>Hangi Yazılım Dilini Kulalnıyorsunuz?</label><br>
+            <input type="radio" name="yd" id="yd"><label>C#</label><br>
+            <input type="radio" name="yd" id="yd"><label>Java</label><br>
+            <input type="radio" name="yd" id="yd"><label>PHP</label><br>
+            <input type="radio" name="yd" id="yd"><label>Go</label> 
+        </div>   
+        <div>
+            <label for="il">İl Seçiniz</label>
+            <select name="il" id="il">
+                <option>Lütfen Seçiniz</option>
+                <option value="01">Adana</option>
+                <option value="06">Ankara</option>
+                <option value="34">İstanbul</option>
+                <option value="55">Samsun</option>
+            </select>
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/200" alt="">
+           
+        </div>
+        <div hidden>
+            <input type="file">
+        </div>
+    </div>
+</body>
+</html>
