@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 95vh;
+        }
+        .row{
+            flex: 1;
+            display: flex;
+            border: 1px solid chocolate;
+            margin-bottom: 5px;
+            border-radius: 20px;
+        }
+        .col{
+            border: 1px solid red;
+            margin: 5px;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .col-1{flex: 1;}.col-2{flex: 2;}.col-3{flex: 3;}.col-4{flex: 4;}
+        .form{
+            margin: 5px;
+            padding: 3px;
+        }
+        .form-label{
+            display: block;
+            margin-bottom: 2px;
+        }
+        .form-input{
+            padding: 6px 10px;
+            width: 90%;
+            border: 1px solid grey;
+            border-radius: 8px;
+        }
+        .form-input:focus{
+            background-color: rgb(242, 232, 229);
+        }
+        .form-button{
+            width: 95%;
+            border-radius: 5px;
+            border: 1px solid rgb(62, 62, 240);
+            background-color: rgb(62, 62, 240);
+            padding: 10px;
+            color: white;
+        }
+        .form-button:hover{
+            background-color: rgb(92, 92, 240);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-3">
+                <div class="form">
+                    <label for="ad" class="form-label">Adınızı giriniz</label>
+                    <input class="form-input" type="text" name="ad" id="ad">
+                </div>
+                <div class="form">
+                    <label for="soyad" class="form-label">Soyadınızı giriniz</label>
+                    <input class="form-input" type="text" name="soyad" id="soyad">
+                </div>
+                <div class="form">
+                    <label for="adres" class="form-label">Adres giriniz</label>
+                    <input class="form-input" type="text" name="adres" id="adres">
+                </div>
+            </div>
+            <div class="col col-3">
+                <div class="form">
+                    <label for="yas" class="form-label">Yaşınız</label>
+                    <select class="form-input" name="yas" id="yas">
+                        <option>Seçiniz</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col col-2">
+                <div class="form">
+                    <button class="form-button" type="submit">Ekle</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>
